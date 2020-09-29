@@ -32,7 +32,7 @@ cards.each(function (index) {
   }
 });
 
-$(tagsArray).each(function (index) {
+for (var i = 0; i < tagsArray.length; i++) {
   //clone any tagElement with the event
-  $(tagElement[0]).clone(true).text(tagsArray[index]).appendTo(bigTagsList);
-});
+  $(tagElement[0]).clone(true).text(tagsArray[i]).appendTo(bigTagsList);
+}
